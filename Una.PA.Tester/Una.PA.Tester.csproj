@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4764B416-61CA-4BAC-923B-22DFC9325D84}</ProjectGuid>
+    <ProjectGuid>{344F218B-D58D-4175-9B9A-FECDF889D5A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Una.PA.Tester</RootNamespace>
@@ -34,12 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Koolwired.Imap, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Bibliotecas\Koolwired.Imap.dll</HintPath>
-    </Reference>
-    <Reference Include="S22.Imap">
-      <HintPath>..\..\Bibliotecas\S22.Imap.dll</HintPath>
+    <Reference Include="Koolwired.Imap">
+      <HintPath>..\Bibliotecas\Koolwired.Imap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

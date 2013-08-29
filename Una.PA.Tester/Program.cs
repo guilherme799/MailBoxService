@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Koolwired.Imap;
-using System.Net.Mail;
-using System.IO;
 
 namespace Una.PA.Tester
 {

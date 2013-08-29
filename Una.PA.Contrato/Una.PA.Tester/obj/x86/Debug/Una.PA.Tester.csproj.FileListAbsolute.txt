@@ -5,4 +5,3 @@ D:\Workspaces\MailBoxService\Una.PA.Contrato\Una.PA.Tester\obj\x86\Debug\Resolve
 D:\Workspaces\MailBoxService\Una.PA.Contrato\Una.PA.Tester\obj\x86\Debug\Una.PA.Tester.exe
 D:\Workspaces\MailBoxService\Una.PA.Contrato\Una.PA.Tester\obj\x86\Debug\Una.PA.Tester.pdb
 D:\Workspaces\MailBoxService\Una.PA.Contrato\Una.PA.Tester\bin\Debug\Koolwired.Imap.dll
-D:\Workspaces\MailBoxService\Una.PA.Contrato\Una.PA.Tester\bin\Debug\Koolwired.Imap.xml

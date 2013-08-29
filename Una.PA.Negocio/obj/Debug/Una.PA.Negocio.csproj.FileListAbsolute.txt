@@ -1,0 +1,8 @@
+D:\Workspaces\MailBoxService\Una.PA.Negocio\bin\Debug\Una.PA.Negocio.dll
+D:\Workspaces\MailBoxService\Una.PA.Negocio\bin\Debug\Una.PA.Negocio.pdb
+D:\Workspaces\MailBoxService\Una.PA.Negocio\bin\Debug\S22.Imap.dll
+D:\Workspaces\MailBoxService\Una.PA.Negocio\bin\Debug\Una.PA.Contrato.dll
+D:\Workspaces\MailBoxService\Una.PA.Negocio\bin\Debug\Una.PA.Contrato.pdb
+D:\Workspaces\MailBoxService\Una.PA.Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Workspaces\MailBoxService\Una.PA.Negocio\obj\Debug\Una.PA.Negocio.dll
+D:\Workspaces\MailBoxService\Una.PA.Negocio\obj\Debug\Una.PA.Negocio.pdb

@@ -10,7 +10,8 @@ namespace Una.PA.Contrato
     [ServiceContract(Namespace="")]
     public interface IMailBoxService
     {
-        /*[OperationContract]
-        [WebInvoke(Method="POST", UriTemplate="ObterMensagens", ResponseFormat=WebMessageFormat.Json, RequestFormat=WebMessageFormat.Json, BodyStyle=WebMessageBodyStyle.Wrapped)]*/
+        [OperationContract]
+        [WebInvoke(Method="POST", UriTemplate="ObterMensagens", ResponseFormat=WebMessageFormat.Json, RequestFormat=WebMessageFormat.Json, BodyStyle=WebMessageBodyStyle.Wrapped)]
+        DataTransferObject ObterMensagens(IMAP[] servidores);
     }
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Negocio", "..\Una.PA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Tester", "..\Una.PA.Tester\Una.PA.Tester.csproj", "{344F218B-D58D-4175-9B9A-FECDF889D5A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.WebAPI", "..\Una.PA.WebAPI\Una.PA.WebAPI.csproj", "{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{344F218B-D58D-4175-9B9A-FECDF889D5A4}.Release|Mixed Platforms.Build.0 = Release|x86
 		{344F218B-D58D-4175-9B9A-FECDF889D5A4}.Release|x86.ActiveCfg = Release|x86
 		{344F218B-D58D-4175-9B9A-FECDF889D5A4}.Release|x86.Build.0 = Release|x86
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4A089C82-6064-4F8F-9B02-6C91E3BF9B1B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="S22.Imap">
-      <HintPath>..\Bibliotecas\S22.Imap.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BuscarCaixaEntrada.cs" />
+    <Compile Include="Classes\BuscarCaixaSaida.cs" />
+    <Compile Include="Classes\FabricaBuscaMensagens.cs" />
     <Compile Include="Classes\Processamento.cs" />
+    <Compile Include="Interfaces\IBuscarMensagens.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

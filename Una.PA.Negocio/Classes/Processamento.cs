@@ -6,7 +6,7 @@ using Una.PA.Contrato;
 
 namespace Una.PA.Negocio
 {
-    public class Processamento : IMailBoxService
+    public class Processamento
     {
         public DataTransferObject ObterMensagens(IMAP[] servidores)
         {

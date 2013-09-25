@@ -1,5 +1,4 @@
 D:\Workspaces\MailBoxService\Una.PA.Contrato\bin\Debug\Una.PA.Contrato.dll
 D:\Workspaces\MailBoxService\Una.PA.Contrato\bin\Debug\Una.PA.Contrato.pdb
-D:\Workspaces\MailBoxService\Una.PA.Contrato\obj\Debug\ResolveAssemblyReference.cache
 D:\Workspaces\MailBoxService\Una.PA.Contrato\obj\Debug\Una.PA.Contrato.dll
 D:\Workspaces\MailBoxService\Una.PA.Contrato\obj\Debug\Una.PA.Contrato.pdb

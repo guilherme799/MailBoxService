@@ -1,0 +1,4 @@
+D:\Workspaces\MailBoxService\Una.PA.Web\bin\Una.PA.Web.dll
+D:\Workspaces\MailBoxService\Una.PA.Web\bin\Una.PA.Web.pdb
+D:\Workspaces\MailBoxService\Una.PA.Web\obj\Debug\Una.PA.Web.dll
+D:\Workspaces\MailBoxService\Una.PA.Web\obj\Debug\Una.PA.Web.pdb

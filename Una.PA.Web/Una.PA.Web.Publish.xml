@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\Una\Site" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="09/23/2013 18:30:38" />
+    <file relUrl="Scripts/bootstrap/bootstrap.js" publishTime="09/23/2013 15:27:59" />
+    <file relUrl="Scripts/jQuery/jquery.tmpl.min.js" publishTime="01/28/2013 13:22:16" />
+    <file relUrl="Login/Login.htm" publishTime="09/23/2013 18:21:13" />
+    <file relUrl="Scripts/jQuery/jquery.tmplPlus.js" publishTime="01/28/2013 13:22:16" />
+    <file relUrl="index.htm" publishTime="09/23/2013 17:23:08" />
+    <file relUrl="packages.config" publishTime="09/23/2013 15:28:00" />
+    <file relUrl="Scripts/jQuery/jquery.tmplPlus.min.js" publishTime="01/28/2013 13:22:16" />
+    <file relUrl="Scripts/jQuery/jquery-2.0.3.min.js" publishTime="09/23/2013 14:25:56" />
+    <file relUrl="Scripts/jQuery/jquery-2.0.3.js" publishTime="09/23/2013 14:25:56" />
+    <file relUrl="Scripts/jQuery/jquery.tmpl.js" publishTime="01/28/2013 13:22:16" />
+    <file relUrl="Content/images/glyphicons-halflings-white.png" publishTime="09/23/2013 15:27:59" />
+    <file relUrl="Content/bootstrap/bootstrap.css" publishTime="09/23/2013 15:28:00" />
+    <file relUrl="Scripts/main.js" publishTime="09/23/2013 18:28:58" />
+    <file relUrl="Content/bootstrap/bootstrap-responsive.min.css" publishTime="09/23/2013 15:27:59" />
+    <file relUrl="Content/images/glyphicons-halflings.png" publishTime="09/23/2013 15:27:59" />
+    <file relUrl="Content/bootstrap/bootstrap-responsive.css" publishTime="09/23/2013 15:28:00" />
+    <file relUrl="Scripts/jQuery/jquery-2.0.3-vsdoc.js" publishTime="09/23/2013 14:25:56" />
+    <file relUrl="Scripts/bootstrap/bootstrap.min.js" publishTime="09/23/2013 15:27:59" />
+    <file relUrl="bin/Una.PA.Web.dll" publishTime="09/23/2013 17:45:55" />
+    <file relUrl="Content/bootstrap/bootstrap.min.css" publishTime="09/23/2013 15:28:00" />
+    <file relUrl="bin/Una.PA.Web.pdb" publishTime="09/23/2013 17:45:55" />
+  </publishProfile>
+</publishData>

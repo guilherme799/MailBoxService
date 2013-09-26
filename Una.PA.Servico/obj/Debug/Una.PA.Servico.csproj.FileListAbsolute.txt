@@ -24,3 +24,4 @@ D:\Workspaces\MailBoxService\Una.PA.Servico\obj\Debug\Una.PA.Servico.dll
 D:\Workspaces\MailBoxService\Una.PA.Servico\obj\Debug\Una.PA.Servico.pdb
 D:\Workspaces\MailBoxService\Una.PA.Servico\bin\EntityFramework.dll
 D:\Workspaces\MailBoxService\Una.PA.Servico\bin\EntityFramework.xml
+D:\Workspaces\MailBoxService\Una.PA.Servico\obj\Debug\Una.PA.Servico.csprojResolveAssemblyReference.cache

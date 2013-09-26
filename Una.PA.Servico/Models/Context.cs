@@ -14,8 +14,8 @@ namespace Una.PA.Servico.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.Configuration.LazyLoadingEnabled = false;
             base.OnModelCreating(modelBuilder);
+            base.Configuration.LazyLoadingEnabled = false;
         }
     }
 
@@ -23,7 +23,7 @@ namespace Una.PA.Servico.Models
     {
         protected override void Seed(Context context)
         {
-            Usuario usuario = context.Usuarios.Add(new Usuario { Nome = "Administrador do sistema", Login = "adminsitrador", Senha = "password" });
+            Usuario usuario = context.Usuarios.Add(new Usuario { Nome = "Administrador do sistema", Login = "administrador", Senha = "password" });
             Imap imap = context.Imaps.Add(new Imap { Nome = "Gmail", Host = "imap.gmail.com", Porta = 993, SSL = true });
             context.SaveChanges();
 

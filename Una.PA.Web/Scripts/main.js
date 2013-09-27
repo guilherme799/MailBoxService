@@ -1,4 +1,6 @@
 ﻿var urlRest = 'http://localhost:49254/api/';
+var usuario = new Usuario();
+
 var tipoAlert = {
     DANGER: 'danger',
     WARNING: 'warning',
@@ -6,19 +8,24 @@ var tipoAlert = {
     SUCCES: 'succes'
 };
 
+var opcaoEntrada = {
+    TODAS: 'Todas',
+    LIDAS: 'Lidas',
+    NAO_LIDAS: 'NaoLidas',
+    IMPORTANTES: 'Importantes'
+};
+
 
 $(function () {
     $.get('Login/Login.htm', function (data) {
-        $('body>.container').append(data);
+        $('body>.container').html(data);
         $('#btnEntrar').on('click', efetuarLogin);
     });
 });
 
 var efetuarLogin = function () {
-    var usuario = {
-        Login: $('#txtUsuario').val(),
-        Senha: $('#txtSenha').val()
-    };
+    usuario.Login = $('#txtUsuario').val();
+    usuario.Senha = $('#txtSenha').val();
 
     $('#alert').html('');
     $.ajax({
@@ -27,7 +34,11 @@ var efetuarLogin = function () {
         data: usuario,
         statusCode: {
             302: function (xhr, textStatus, status) {
+                usuario = new Usuario(xhr.responseJSON.Id, xhr.responseJSON.Nome, xhr.responseJSON.Login, xhr.responseJSON.Senha);
+
                 $('#alert').html('');
+                $('#nome_usuario').html(usuario.Nome)
+                $.get('Principal/Principal.htm', carregaTelaPrincipal);
             },
             404: function (xhr, textStatus, status) {
                 $('#tmpl-alert').tmpl({
@@ -37,4 +48,48 @@ var efetuarLogin = function () {
             }
         }
     });
+};
+
+var carregaTelaPrincipal = function (data) {
+    $('body>.container').html(data);
+    var url = urlRest.concat('UsuarioImap/ObterImapsUsuario/').concat(usuario.Id);
+
+    $.get(url, function (data, status, xhr) {
+        carregaComboServidor(data);
+    });
+
+    $('#btnEntrada').click(function () {
+        $('#nav-entrada').slideToggle('slow');
+    });
+
+    $('#nav-entrada li').click(navEntradaMenu_Click);
+};
+
+var carregaComboServidor = function (usuario_imaps) {
+    var combo = new Combo('cbxServidor', 'Servidor');
+
+    for (var i = 0; i < usuario_imaps.length; i++) {
+        var imap = usuario_imaps[i].Imap;
+        var item = new Item(imap.Id, imap.Nome);
+        combo.itens.push(item);
+    }
+
+    $('#tmpl-combobox').tmpl(combo).appendTo('#combo-container');
+};
+
+var navEntradaMenu_Click = function () {
+    var opcao = this.id.split('_')[1];
+
+    switch (opcao) {
+        case opcaoEntrada.TODAS:
+            break;
+        case opcaoEntrada.LIDAS:
+            break;
+        case opcaoEntrada.NAO_LIDAS:
+            break;
+        case opcaoEntrada.IMPORTANTES:
+            break;
+        default:
+            break;
+    }
 };

@@ -58,6 +58,7 @@
     <Content Include="Content\main.css" />
     <Content Include="index.htm" />
     <Content Include="Login\Login.htm" />
+    <Content Include="Principal\Principal.htm" />
     <Content Include="Scripts\bootstrap\bootstrap.js" />
     <Content Include="Scripts\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\jQuery\jquery-2.0.3-vsdoc.js" />
@@ -68,6 +69,7 @@
     <Content Include="Scripts\jQuery\jquery.tmplPlus.js" />
     <Content Include="Scripts\jQuery\jquery.tmplPlus.min.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\Models.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,6 +89,7 @@
     <None Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Scripts\jQuery\jquery-2.0.3.min.map" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

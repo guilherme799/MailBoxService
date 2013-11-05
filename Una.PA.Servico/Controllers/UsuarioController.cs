@@ -17,7 +17,7 @@ namespace Una.PA.Servico.Controllers
         private Context db = new Context();
 
         // GET api/Default1
-        public IEnumerable<Usuario> GetUsuarios()
+        public IEnumerable<Usuario> GetUsuario()
         {
             return db.Usuarios.AsEnumerable();
         }
@@ -59,9 +59,8 @@ namespace Una.PA.Servico.Controllers
         }
 
         // POST api/Default1
-        [HttpPost]
         [AllowAnonymous]
-        public HttpResponseMessage AdicionarUsuario(Usuario usuario)
+        public HttpResponseMessage PostUsuario(Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -78,13 +77,12 @@ namespace Una.PA.Servico.Controllers
             }
         }
 
-        [HttpPost]
         [AllowAnonymous]
-        public HttpResponseMessage LogarUsuario(Usuario usuario)
+        public HttpResponseMessage GetUsuario(string Login, string Senha)
         {
             if (ModelState.IsValid)
             {
-                usuario = db.Usuarios.FirstOrDefault(u => u.Login.Equals(usuario.Login) && u.Senha.Equals(usuario.Senha));
+                Usuario usuario = db.Usuarios.FirstOrDefault(u => u.Login.Equals(Login) && u.Senha.Equals(Senha));
                 if (usuario == null)
                     throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound, new Exception("Usuário ou senha inválidos.")));
 

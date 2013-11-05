@@ -39,6 +39,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Koolwired.Imap">
+      <HintPath>..\Bibliotecas\Koolwired.Imap.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -110,6 +113,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\UsuarioImapController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -118,6 +122,7 @@
     </Compile>
     <Compile Include="Handlers\CorsHandler.cs" />
     <Compile Include="Models\Context.cs" />
+    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\Imap.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Usuario_Imap.cs" />

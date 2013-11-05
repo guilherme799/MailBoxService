@@ -6,7 +6,8 @@
 
 .full-content
 {
-     min-height: 800px;   
+     height: 800px;  
+     overflow: auto; 
 }
 
 .nav-child

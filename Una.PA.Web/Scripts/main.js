@@ -1,21 +1,6 @@
 ﻿var urlRest = 'http://localhost:49254/api/';
 var usuario = new Usuario();
 
-var tipoAlert = {
-    DANGER: 'danger',
-    WARNING: 'warning',
-    INFO: 'info',
-    SUCCES: 'succes'
-};
-
-var opcaoEntrada = {
-    TODAS: 'Todas',
-    LIDAS: 'Lidas',
-    NAO_LIDAS: 'NaoLidas',
-    IMPORTANTES: 'Importantes'
-};
-
-
 $(function () {
     $.get('Login/Login.htm', function (data) {
         $('body>.container').html(data);
@@ -29,9 +14,8 @@ var efetuarLogin = function () {
 
     $('#alert').html('');
     $.ajax({
-        type: 'POST',
-        url: urlRest.concat('Usuario/LogarUsuario'),
-        data: usuario,
+        type: 'GET',
+        url: urlRest.concat('Usuario?Login=' + usuario.Login + '&Senha=' + usuario.Senha),
         statusCode: {
             302: function (xhr, textStatus, status) {
                 usuario = new Usuario(xhr.responseJSON.Id, xhr.responseJSON.Nome, xhr.responseJSON.Login, xhr.responseJSON.Senha);
@@ -41,10 +25,7 @@ var efetuarLogin = function () {
                 $.get('Principal/Principal.htm', carregaTelaPrincipal);
             },
             404: function (xhr, textStatus, status) {
-                $('#tmpl-alert').tmpl({
-                    tipo: tipoAlert.DANGER,
-                    mensagem: xhr.responseJSON.Message
-                }).appendTo('#alert');
+                $('#tmpl-alert').tmpl(new Alert(tipoAlert.DANGER, xhr.responseJSON.Message)).appendTo('#alert');
             }
         }
     });
@@ -52,7 +33,7 @@ var efetuarLogin = function () {
 
 var carregaTelaPrincipal = function (data) {
     $('body>.container').html(data);
-    var url = urlRest.concat('UsuarioImap/ObterImapsUsuario/').concat(usuario.Id);
+    var url = urlRest.concat('UsuarioImap?id_usuario=').concat(usuario.Id);
 
     $.get(url, function (data, status, xhr) {
         carregaComboServidor(data);
@@ -79,10 +60,9 @@ var carregaComboServidor = function (usuario_imaps) {
 
 var navEntradaMenu_Click = function () {
     var opcao = this.id.split('_')[1];
+    var url = urlRest.concat('Email/').concat(usuario.Id);
 
     switch (opcao) {
-        case opcaoEntrada.TODAS:
-            break;
         case opcaoEntrada.LIDAS:
             break;
         case opcaoEntrada.NAO_LIDAS:
@@ -90,6 +70,22 @@ var navEntradaMenu_Click = function () {
         case opcaoEntrada.IMPORTANTES:
             break;
         default:
+            GetEmail(url);
             break;
     }
+};
+
+var GetEmail = function (url) {
+    $.ajax({
+        type: 'GET',
+        url: url,
+        statusCode: {
+            302: function (xhr, textStatus, status) {
+                $('#tmp-email').tmpl(xhr.responseJSON).appendTo('#panel-emails')
+            },
+            404: function (xhr, textStatus, status) {
+                debugger;
+            }
+        }
+    });
 };

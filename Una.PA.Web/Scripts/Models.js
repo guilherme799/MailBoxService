@@ -1,4 +1,18 @@
-﻿var Usuario = function (Id, Nome, Login, Senha) {
+﻿var tipoAlert = {
+    DANGER: 'danger',
+    WARNING: 'warning',
+    INFO: 'info',
+    SUCCES: 'succes'
+};
+
+var opcaoEntrada = {
+    TODAS: 'Todas',
+    LIDAS: 'Lidas',
+    NAO_LIDAS: 'NaoLidas',
+    IMPORTANTES: 'Importantes'
+};
+
+var Usuario = function (Id, Nome, Login, Senha) {
     this.Id = Id ? Id : 0;
     this.Nome = Nome ? Nome : '';
     this.Login = Login ? Login : '';
@@ -14,4 +28,9 @@ var Combo = function (id_combo, label, itens) {
 var Item = function (valor, texto) {
     this.valor = valor ? valor : 0;
     this.texto = texto ? texto : '';
+};
+
+var Alert = function (tipo, mensagem) {
+    this.tipo = tipo ? tipo : tipoAlert.DANGER;
+    this.mensagem = mensagem ? mensagem : 'Erro';
 };

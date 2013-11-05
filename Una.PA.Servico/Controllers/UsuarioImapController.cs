@@ -36,9 +36,9 @@ namespace Una.PA.Servico.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IEnumerable<Usuario_Imap> ObterImapsUsuario(int id)
+        public IEnumerable<Usuario_Imap> GetImapUsuario(int id_usuario)
         {
-            return db.Usuario_Imap.Include(u => u.Imap).Where(u => u.Id_usuario == id);
+            return db.Usuario_Imap.Include(u => u.Imap).Where(u => u.Id_usuario == id_usuario);
         }
 
         // PUT api/UsuarioImap/5

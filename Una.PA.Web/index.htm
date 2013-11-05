@@ -23,15 +23,28 @@
         </div>
     </script>
     <script type="text/html" id="tmp-email">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <span><strong>De:</strong>${Remetente}</span>
-                <div>
-                    <span><strong>Assunto:</strong>${Assunto}</span>
+        <li>
+            <a>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <span><strong>De:</strong>${Remetente}</span>
+                        <div>
+                            <span><strong>Assunto:</strong>${Assunto}</span>
+                        </div>
+                        <span class="pull-right"><strong>Data:</strong>${Data_Envio}</span>
+                    </div>
                 </div>
-                <span class="pull-right"><strong>Data:</strong>${Data_Envio}</span>
-            </div>
-        </div>
+                <input id="hdnJSON" type="hidden" value="({id:'email-${$id}', Assunto: '${Assunto}', Mensagem: ''})" />
+                <input id="hdnMensagem" type="hidden" value="${Mensagem}" />
+            </a>
+        </li>
+    </script>
+    <script type="text/html" id="tmp-tab-mensagem">
+        <li class="tab-mail"><a href="#${id}" id="tab-email-${id}">${Assunto}</a></li>
+    </script>
+    <script type="text/html" id="tmp-corpo-mensagem">
+        <div class="tab-pane fade" id="email-${$id}">
+        </div>        
     </script>
     <script type="text/html" id="tmpl-alert">
         <div class="alert alert-${tipo}">

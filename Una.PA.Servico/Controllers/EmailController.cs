@@ -6,6 +6,9 @@ using System.Net.Http;
 using System.Web.Http;
 using Koolwired.Imap;
 using Una.PA.Servico.Models;
+using System.Web;
+using Una.PA.Helpers;
+using System.Text;
 
 namespace Una.PA.Servico.Controllers
 {
@@ -75,7 +78,13 @@ namespace Una.PA.Servico.Controllers
                     if (m.HasHTML)
                     {
                         msg = command.FetchBodyPart(m, m.HTML);
-                        email.Mensagem = msg.BodyParts[m.HTML].Data;
+                        string html = msg.BodyParts[m.HTML].Data;
+                        Encoding encoding = msg.BodyParts[m.HTML].Encoding;
+
+                        if (msg.BodyParts[m.HTML].ContentEncoding == BodyPartEncoding.BASE64)
+                            email.Mensagem = html.DecodeBase64(encoding);
+                        else
+                            email.Mensagem = html.ToUTF8(encoding);
                     }
 
                     emails.Add(email);

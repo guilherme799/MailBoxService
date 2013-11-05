@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Web", "Una.PA.Web\Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Servico", "Una.PA.Servico\Una.PA.Servico.csproj", "{422B8563-6AE3-4FE0-8364-0B0B28ECBE83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Helpers", "Una.PA.Helpers\Una.PA.Helpers.csproj", "{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,16 @@ Global
 		{422B8563-6AE3-4FE0-8364-0B0B28ECBE83}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{422B8563-6AE3-4FE0-8364-0B0B28ECBE83}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{422B8563-6AE3-4FE0-8364-0B0B28ECBE83}.Release|x86.ActiveCfg = Release|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0DE075E0-E99A-42B8-A7D0-DA987F50C5BA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,4 @@
+D:\Workspaces\MailBoxService\Una.PA.Helpers\bin\Debug\Una.PA.Helpers.dll
+D:\Workspaces\MailBoxService\Una.PA.Helpers\bin\Debug\Una.PA.Helpers.pdb
+D:\Workspaces\MailBoxService\Una.PA.Helpers\obj\Debug\Una.PA.Helpers.dll
+D:\Workspaces\MailBoxService\Una.PA.Helpers\obj\Debug\Una.PA.Helpers.pdb

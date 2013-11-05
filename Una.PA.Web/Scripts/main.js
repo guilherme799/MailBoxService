@@ -44,6 +44,9 @@ var carregaTelaPrincipal = function (data) {
     });
 
     $('#nav-entrada li').click(navEntradaMenu_Click);
+
+    url = urlRest.concat('Email/').concat(usuario.Id);
+    getEmails(url);
 };
 
 var carregaComboServidor = function (usuario_imaps) {
@@ -70,22 +73,40 @@ var navEntradaMenu_Click = function () {
         case opcaoEntrada.IMPORTANTES:
             break;
         default:
-            GetEmail(url);
+            getEmails(url);
             break;
     }
 };
 
-var GetEmail = function (url) {
+var getEmails = function (url) {
     $.ajax({
         type: 'GET',
         url: url,
         statusCode: {
             302: function (xhr, textStatus, status) {
-                $('#tmp-email').tmpl(xhr.responseJSON).appendTo('#panel-emails')
+                $('#tmp-email').tmpl(xhr.responseJSON).appendTo('#nav-emails');
+                $('#tmp-corpo-mensagem').tmpl(xhr.responseJSON).appendTo('#tab-content-email');
+                $('#nav-emails a').click(renderizarMensagem);
             },
             404: function (xhr, textStatus, status) {
                 debugger;
             }
         }
+    });
+};
+
+var renderizarMensagem = function () {
+    debugger;
+    var JSON = $(this).children('#hdnJSON').val();
+    var objTab = eval(JSON);
+    objTab.Mensagem = $(this).children('#hdnMensagem').val();
+
+    $("#" + objTab.id).html(objTab.Mensagem);
+    $('#tmp-tab-mensagem').tmpl(objTab).appendTo('#tab-email');
+    $('#tab-email-' + objTab.id).tab('show');
+
+    $('#tab-email-' + objTab.id).click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
     });
 };

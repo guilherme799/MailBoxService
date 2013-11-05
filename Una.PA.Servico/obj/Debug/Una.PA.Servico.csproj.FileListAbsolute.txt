@@ -26,3 +26,5 @@ D:\Workspaces\MailBoxService\Una.PA.Servico\bin\EntityFramework.dll
 D:\Workspaces\MailBoxService\Una.PA.Servico\bin\EntityFramework.xml
 D:\Workspaces\MailBoxService\Una.PA.Servico\obj\Debug\Una.PA.Servico.csprojResolveAssemblyReference.cache
 D:\Workspaces\MailBoxService\Una.PA.Servico\bin\Koolwired.Imap.dll
+D:\Workspaces\MailBoxService\Una.PA.Servico\bin\Una.PA.Helpers.dll
+D:\Workspaces\MailBoxService\Una.PA.Servico\bin\Una.PA.Helpers.pdb

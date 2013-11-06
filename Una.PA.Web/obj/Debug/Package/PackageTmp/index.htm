@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MailBox 1.0</title>
+    <!--CSS-->
+    <link rel="Stylesheet" href="Content/bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="Stylesheet" href="Content/main.css" type="text/css" />
+    <!--Javascripts-->
+    <script type="text/javascript" src="Scripts/jQuery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/jQuery/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="Scripts/jQuery/jquery.tmplPlus.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/Models.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script type="text/hmtl" id="tmpl-combobox">
+        <div class="form-group">
+            <label for="${id_combo}">${label}</label>
+            <select id="${id_combo}" name="${id_combo}" class="form-control">
+                {{each(i, item) itens}}
+                    <option value="${item.valor}">${item.texto}</option>
+                {{/each}}
+            </select>
+        </div>
+    </script>
+    <script type="text/html" id="tmp-email">
+        <li>
+            <a>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <span><strong>De:</strong>${Remetente}</span>
+                        <div>
+                            <span><strong>Assunto:</strong>${Assunto}</span>
+                        </div>
+                        <span class="pull-right"><strong>Data:</strong>${Data_Envio}</span>
+                    </div>
+                </div>
+                <input id="hdnJSON" type="hidden" value="({id:'email-${$id}', Assunto: '${Assunto}', Mensagem: ''})" />
+                <input id="hdnMensagem" type="hidden" value="${Mensagem}" />
+            </a>
+        </li>
+    </script>
+    <script type="text/html" id="tmp-tab-mensagem">
+        <li class="tab-mail"><a href="#${id}" id="tab-email-${id}">${Assunto}</a></li>
+    </script>
+    <script type="text/html" id="tmp-corpo-mensagem">
+        <div class="tab-pane fade" id="email-${$id}">
+        </div>        
+    </script>
+    <script type="text/html" id="tmpl-alert">
+        <div class="alert alert-${tipo}">
+            <p>${mensagem}</p>
+        </div>
+    </script>
+</head>
+<body class="full-content">
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">MailBox 1.0</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="navbar-brand" id="nome_usuario"></a></li>
+                    <li>
+                        <button id="btnCriarConta" class="btn btn-success" style="margin-top: 8px;">
+                            <i>Criar conta</i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    </div>
+</body>
+</html>

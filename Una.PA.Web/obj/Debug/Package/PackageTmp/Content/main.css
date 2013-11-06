@@ -1,0 +1,46 @@
+﻿body
+{
+    padding-top: 52px;
+    background-image: radial-gradient(ellipse at center, #f2f4f2 0%,#e1eae1 40%,#c7dbc7 100%);
+}
+
+.full-content
+{
+     height: 800px;  
+     overflow: auto; 
+}
+
+.auto-height
+{
+    height: 93%;
+}
+
+.nav-child
+{
+    padding-left: 25px;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+.tab-mail
+{
+    width: 180px;
+    height: 40px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#mensagem-container
+{
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+#row-principal .full-content
+{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}

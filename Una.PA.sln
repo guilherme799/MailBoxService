@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Contrato", "Una.PA.Contrato\Una.PA.Contrato.csproj", "{714ED37A-D362-4038-8C9F-E81AC43E16EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Una.PA.Negocio", "Una.PA.Negocio\Una.PA.Negocio.csproj", "{EA78BAF0-8495-4961-9446-B811007F159F}"

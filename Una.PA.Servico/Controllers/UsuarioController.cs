@@ -78,7 +78,7 @@ namespace Una.PA.Servico.Controllers
         }
 
         [AllowAnonymous]
-        public HttpResponseMessage GetUsuario(string Login, string Senha)
+        public HttpResponseMessage GetUsuario([FromUri]string Login, [FromUri]string Senha)
         {
             if (ModelState.IsValid)
             {
